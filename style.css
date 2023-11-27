@@ -3,14 +3,25 @@
     margin: 0;
 
 }
+
+.conteudo {
+    display:flex;
+    align-items: center;
+}
 body {
+    height: 100vh; /*altura do viewport*/
+    box-sizing: border-box;
     background: rgb(0, 0, 0);
     color: #f6f6f6;
 }
 
 .titulo-destaque {
-    color:rgb(117, 0, 0);
+    color:rgb(117, 0, 103);
     /*border: 1px solid rgb(117, 0, 0);
     padding: 10px;*/
 }
-
+.foto-perfil {
+    width: 467.705px;
+    height: 532px;
+    border-radius: 16px;
+}
