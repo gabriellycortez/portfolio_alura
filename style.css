@@ -10,10 +10,11 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10% 15%;
+    /*margin: 10% 15%;*/
+    padding: 8% 15%;
 }
 body {
-    height: 100vh; /*altura do viewport*/
+    /* height: 100vh; altura do viewport */
     box-sizing: border-box;
     background: rgb(0, 0, 0);
     color: #f6f6f6;
@@ -83,4 +84,14 @@ body {
 
 .conteudo-links-botoes:hover {
     background-color:#272727;
+}
+
+.rodape {
+    padding: 24px;
+    color: white;
+    background-color: rgb(73, 0, 0);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
