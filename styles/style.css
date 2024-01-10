@@ -34,7 +34,7 @@ body {
 
 .cabecalho-menu-link {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -46,6 +46,7 @@ body {
     justify-content: space-between;
     /*margin: 10% 15%;*/
     padding: 6% 15%;
+    gap: 82px;
 }
 
 .titulo-destaque {
@@ -60,7 +61,7 @@ body {
 }*/
 
 .conteudo-principal {
-    width: 615px;
+    width: 50%;
     display: flex; 
     flex-direction: column;
     gap: 40px;
@@ -68,12 +69,12 @@ body {
 }
 
 .conteudo-principal-titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
 .conteudo-principal-paragrafo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -89,7 +90,7 @@ body {
 .conteudo-links-titulo{
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .conteudo-links-botoes {
@@ -97,10 +98,10 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 328px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0; 
     text-decoration: none;
@@ -124,12 +125,37 @@ body {
     text-align: justify;
 }
 
+.foto-perfil{
+    width: 50%;
+}
+
 .rodape {
     padding: 24px;
     color: var(--cor-secundaria);
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media(max-width:1200px) {
+
+    .cabecalho {
+        padding: 10px;
+    }
+
+    .cabecalho-menu {
+        justify-content: center;
+    }
+
+    .conteudo {
+        flex-direction: column-reverse; /** mudar a direção do código, nesse caso a img foi para cima */
+        padding: 5%;
+    }
+
+    .conteudo-principal {
+        width: auto;
+    }
+
 }
